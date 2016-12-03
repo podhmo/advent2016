@@ -18,6 +18,7 @@ jsontogo:
 	python src/jsontogo/01*.py json/github.json | gofmt > dst/jsontogo/github.go
 	python src/jsontogo/02*.py json/github.json | gofmt > dst/jsontogo/github2.go
 	python src/jsontogo/03*.py json/github.json | gofmt > dst/jsontogo/github3.go
+	python src/jsontogo/04*.py json/github.json | gofmt > dst/jsontogo/github4.go
 
 misc:
 	rm -f misc/*.output*
