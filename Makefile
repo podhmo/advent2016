@@ -16,8 +16,8 @@ fizzbuzz:
 jsontogo:
 	mkdir -p dst/jsontogo/
 	python src/jsontogo/01*.py json/github.json | gofmt > dst/jsontogo/github.go
-	mkdir -p dst/jsontogo/
 	python src/jsontogo/02*.py json/github.json | gofmt > dst/jsontogo/github2.go
+	python src/jsontogo/03*.py json/github.json | gofmt > dst/jsontogo/github3.go
 
 misc:
 	rm -f misc/*.output*
