@@ -97,6 +97,8 @@ def is_omitempty_struct_info(subinfo, sinfo):
 
 
 def emit_code(sinfo, name, m, im):
+    cw = CommentWriter(m, name, sinfo)
+
     def _emit_struct(sinfo, name, parent=None):
         with m.type_(name, to_type_struct_info(sinfo)):
             for name, subinfo in sorted(sinfo["children"].items()):
@@ -107,6 +109,7 @@ def emit_code(sinfo, name, m, im):
             im.import_(sinfo.get("type").rsplit(".", 1)[0])
 
         if sinfo.get("type") == "struct":
+            cw.write(name, sinfo, parent=parent)
             cont.append((name, sinfo))
             typ = name
         else:
@@ -126,6 +129,24 @@ def emit_code(sinfo, name, m, im):
         name, sinfo = cont.popleft()
         _emit_struct(sinfo, name)
     return m
+
+
+class CommentWriter(object):
+    def __init__(self, m, name, sinfo):
+        m.stmt("/* structure")
+        cm = GoModule()
+        m.stmt(cm)
+        cm.stmt(name)
+        self.cm_map = {sinfo["jsonname"]: cm}
+        m.stmt("*/")
+
+    def write(self, name, sinfo, parent=None):
+        if parent is None:
+            return
+        cm = self.cm_map[parent["jsonname"]]
+        with cm.scope():
+            cm.stmt(name)
+            self.cm_map[sinfo["jsonname"]] = cm.submodule(newline=False)
 
 
 if __name__ == "__main__":
