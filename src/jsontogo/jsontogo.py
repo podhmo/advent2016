@@ -4,6 +4,7 @@
 import re
 import json
 from collections import defaultdict
+from collections import deque
 from prestring.go import GoModule
 from prestring.go import goname as to_goname
 
@@ -96,19 +97,23 @@ def is_omitempty_struct_info(subinfo, sinfo):
 
 
 def emit_code(sinfo, name, m, im):
+    def _emit_struct(sinfo, name, parent=None):
+        with m.type_(name, to_type_struct_info(sinfo)):
+            for name, subinfo in sorted(sinfo["children"].items()):
+                _emit_code(subinfo, name, m, parent=sinfo)
+
     def _emit_code(sinfo, name, m, parent=None):
         if "." in sinfo.get("type"):
             im.import_(sinfo.get("type").rsplit(".", 1)[0])
 
         if sinfo.get("type") == "struct":
-            with m.block("{} struct".format(name)):
-                for name, subinfo in sorted(sinfo["children"].items()):
-                    _emit_code(subinfo, name, m, parent=sinfo)
+            cont.append((name, sinfo))
+            typ = name
         else:
             typ = to_type_struct_info(sinfo)
             if "/" in typ:
                 typ = typ.rsplit("/", 1)[-1]
-            m.stmt('{} {}'.format(name, typ))
+        m.stmt('{} {}'.format(name, typ))
 
         # append tag
         if is_omitempty_struct_info(sinfo, parent):
@@ -116,9 +121,10 @@ def emit_code(sinfo, name, m, im):
         else:
             m.insert_after('  `json:"{}"`'.format(sinfo["jsonname"]))
 
-    with m.type_(name, to_type_struct_info(sinfo)):
-        for name, subinfo in sorted(sinfo["children"].items()):
-            _emit_code(subinfo, name, m, parent=sinfo)
+    cont = deque([(name, sinfo)])
+    while cont:
+        name, sinfo = cont.popleft()
+        _emit_struct(sinfo, name)
     return m
 
 
