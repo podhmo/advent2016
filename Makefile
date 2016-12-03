@@ -13,6 +13,10 @@ fizzbuzz:
 	python src/basic/03*.py | gofmt > dst/basic/fizzbuzz/main.go
 	go run dst/basic/fizzbuzz/main.go
 
+jsontogo:
+	mkdir -p dst/jsontogo/
+	python src/jsontogo/01simplified.py json/github.json | gofmt > dst/jsontogo/github.go
+
 misc:
 	rm -f misc/*.output*
 	for i in misc/*.py; do python $$i > $$i.output.go; done
