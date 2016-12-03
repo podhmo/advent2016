@@ -13,5 +13,11 @@ fizzbuzz:
 	python src/basic/03*.py | gofmt > dst/basic/fizzbuzz/main.go
 	go run dst/basic/fizzbuzz/main.go
 
+misc:
+	rm -f misc/*.output*
+	for i in misc/*.py; do python $$i > $$i.output.go; done
+
 setup:
 	pip install -r requirements.txt
+
+.PHONY: misc
