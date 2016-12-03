@@ -26,6 +26,8 @@ def resolve_type(val, time_rx=re.compile("\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d+)?
     if isinstance(val, str):
         if time_rx.match(val):
             return "time.Time"
+        elif "://" in val:
+            return "github.com/go-openapi/strfmt.Uri"
         else:
             return "string"
     elif isinstance(val, int):
@@ -95,12 +97,18 @@ def is_omitempty_struct_info(subinfo, sinfo):
 
 def emit_code(sinfo, name, m, im):
     def _emit_code(sinfo, name, m, parent=None):
+        if "." in sinfo.get("type"):
+            im.import_(sinfo.get("type").rsplit(".", 1)[0])
+
         if sinfo.get("type") == "struct":
             with m.block("{} struct".format(name)):
                 for name, subinfo in sorted(sinfo["children"].items()):
                     _emit_code(subinfo, name, m, parent=sinfo)
         else:
-            m.stmt('{} {}'.format(name, to_type_struct_info(sinfo)))
+            typ = to_type_struct_info(sinfo)
+            if "/" in typ:
+                typ = typ.rsplit("/", 1)[-1]
+            m.stmt('{} {}'.format(name, typ))
 
         # append tag
         if is_omitempty_struct_info(sinfo, parent):
