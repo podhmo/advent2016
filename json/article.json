@@ -1,16 +1,16 @@
 {
-  "title": "It's a first day",
+  "title": "はじめての日記",
   "author": "foo",
   "content": {
-    "abbrev": "Today! this is ...",
-    "body": "Today! this is .... ....."
+    "abbrev": "今日からブログを始める事になりました。...",
+    "body": "今日からブログを始める事になりました。この記事はadvent calendarのX日目の.... ....."
   },
   "ctime": "2000-01-01T00:00:00Z",
   "comments": [
     {
       "author": "anonymous",
       "content": {
-        "body": "xxx"
+        "body": "hmm"
       },
       "ctime": "2000-01-01T00:00:00Z"
     }

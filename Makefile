@@ -20,6 +20,11 @@ jsontogo:
 	python src/jsontogo/03*.py json/github.json | gofmt > dst/jsontogo/github3.go
 	python src/jsontogo/04*.py json/github.json | gofmt > dst/jsontogo/github4.go
 
+article:
+	mkdir -p dst/article
+	python src/jsontogo/04*.py json/article.json --name Article | gofmt > dst/article/article4.go
+	python src/jsontogo/05*.py json/article.json --name Article | gofmt > dst/article/article5.go
+
 misc:
 	rm -f misc/*.output*
 	for i in misc/*.py; do python $$i > $$i.output.go; done
