@@ -79,6 +79,7 @@ def detect_struct_info(d, name):
             s["jsonname"] = name
             s["freq"] += 1
             s["type"] = select_better_type(s["type"], typ)
+            s["example"] = d
 
     def make_struct_info():
         return {"freq": 0, "type": None, "children": defaultdict(make_struct_info)}
@@ -136,10 +137,9 @@ def emit_code(sinfo, name, m, im, name_score_map={"parent": -1, '': -10}):
         m.stmt(LazyFormat('{} {}', name, typ))
 
         # append tag
-        if is_omitempty_struct_info(sinfo, parent):
-            m.insert_after('  `json:"{},omitempty"`'.format(sinfo["jsonname"]))
-        else:
-            m.insert_after('  `json:"{}"`'.format(sinfo["jsonname"]))
+        omitempty = ",omitempty" if is_omitempty_struct_info(sinfo, parent) else ""
+        example = ' example:"{}"'.format(sinfo["example"]) if "example" in sinfo else ""
+        m.insert_after('  `json:"{}{omitempty}"{example}`'.format(sinfo["jsonname"], omitempty=omitempty, example=example))
 
     emit_structure_comment(sinfo, name, parent=None)
 
