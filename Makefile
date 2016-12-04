@@ -23,6 +23,7 @@ jsontogo:
 	python src/jsontogo/06*.py json/github.json | gofmt > dst/jsontogo/github6.go
 	python src/jsontogo/07*.py json/github.json | gofmt > dst/jsontogo/github7.go
 	python src/jsontogo/08*.py json/github.json | gofmt > dst/jsontogo/github8.go
+	python src/jsontogo/09*.py json/github.json | gofmt > dst/jsontogo/github9.go
 
 article:
 	mkdir -p dst/article
