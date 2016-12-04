@@ -31,6 +31,11 @@ article:
 	python src/jsontogo/05*.py json/article.json --name Article | gofmt > dst/article/article5.go
 	python src/jsontogo/07*.py json/article.json --name Article | gofmt > dst/article/article7.go
 
+tree:
+	mkdir -p dst/tree
+	python src/jsontogo/01*.py json/tree.json --name Tree | gofmt > dst/tree/tree.go
+	python src/jsontogo/09*.py json/tree.json --name Tree | gofmt > dst/tree/tree9.go
+
 misc:
 	rm -f misc/*.output*
 	for i in misc/*.py; do python $$i > $$i.output.go; done
