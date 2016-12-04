@@ -6,6 +6,8 @@ import json
 from collections import defaultdict
 from collections import deque
 from prestring import NameStore
+from prestring import PreString
+from prestring import LazyFormat
 from prestring.go import GoModule
 from prestring.go import goname as to_goname
 
@@ -97,10 +99,11 @@ def is_omitempty_struct_info(subinfo, sinfo):
     return subinfo["freq"] < sinfo["freq"]
 
 
-def emit_code(sinfo, name, m, im):
+def emit_code(sinfo, name, m, im, name_score_map={"parent": -1, '': -10}):
     cw = CommentWriter(m, name, sinfo)
     ns = NameStore()
     defs = set()
+    typename_map = defaultdict(lambda: PreString(""))
 
     def make_signature(sinfo):
         return tuple([(k, v["type"], v.get("type2")) for k, v in sorted(sinfo["children"].items())])
@@ -122,14 +125,14 @@ def emit_code(sinfo, name, m, im):
 
         if sinfo.get("type") == "struct":
             signature = make_signature(sinfo)
-            ns[signature] = name
             cont.append((name, sinfo, signature))
-            typ = ns[signature]
+            typ = typename_map[signature]
+            typ.body.append(name)
         else:
             typ = to_type_struct_info(sinfo)
             if "/" in typ:
                 typ = typ.rsplit("/", 1)[-1]
-        m.stmt('{} {}'.format(name, typ))
+        m.stmt(LazyFormat('{} {}', name, typ))
 
         # append tag
         if is_omitempty_struct_info(sinfo, parent):
@@ -145,8 +148,15 @@ def emit_code(sinfo, name, m, im):
         if signature in defs:
             continue
         defs.add(signature)
-        ns[signature] = name
-        _emit_struct(sinfo, ns[signature])
+        typename_map[signature].body.append(name)
+        _emit_struct(sinfo, typename_map[signature])
+
+    for signature, lazy_typename in typename_map.items():
+        candidates = set(lazy_typename.body)
+        new_name = max(candidates, key=lambda k: name_score_map.get(k.lower(), 0))
+        ns[signature] = new_name
+        lazy_typename.body.clear()
+        lazy_typename.body.append(ns[signature])
     return m
 
 
