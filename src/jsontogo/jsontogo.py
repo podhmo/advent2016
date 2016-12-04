@@ -100,9 +100,16 @@ def is_omitempty_struct_info(subinfo, sinfo):
 def emit_code(sinfo, name, m, im):
     cw = CommentWriter(m, name, sinfo)
     ns = NameStore()
+    defs = set()
 
     def make_signature(sinfo):
         return tuple([(k, v["type"], v.get("type2")) for k, v in sorted(sinfo["children"].items())])
+
+    def emit_structure_comment(sinfo, name, parent=None):
+        if sinfo.get("type") == "struct":
+            cw.write(name, sinfo, parent=parent)
+            for name, subinfo in sorted(sinfo["children"].items()):
+                emit_structure_comment(subinfo, name, parent=sinfo)
 
     def _emit_struct(sinfo, name, parent=None):
         with m.type_(name, to_type_struct_info(sinfo)):
@@ -116,7 +123,6 @@ def emit_code(sinfo, name, m, im):
         if sinfo.get("type") == "struct":
             signature = make_signature(sinfo)
             ns[signature] = name
-            cw.write(ns[signature], sinfo, parent=parent)
             cont.append((name, sinfo, signature))
             typ = ns[signature]
         else:
@@ -131,9 +137,14 @@ def emit_code(sinfo, name, m, im):
         else:
             m.insert_after('  `json:"{}"`'.format(sinfo["jsonname"]))
 
+    emit_structure_comment(sinfo, name, parent=None)
+
     cont = deque([(name, sinfo, make_signature(sinfo))])
     while cont:
         name, sinfo, signature = cont.popleft()
+        if signature in defs:
+            continue
+        defs.add(signature)
         ns[signature] = name
         _emit_struct(sinfo, ns[signature])
     return m
