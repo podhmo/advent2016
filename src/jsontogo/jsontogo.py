@@ -115,6 +115,7 @@ def emit_code(sinfo, name, m, im, name_score_map={"parent": -1, '': -10}):
                 emit_structure_comment(subinfo, name, parent=sinfo)
 
     def _emit_struct(sinfo, name, parent=None):
+        m.comment(LazyFormat("{name} : auto generated JSON container", name=name))
         with m.type_(name, to_type_struct_info(sinfo)):
             for name, subinfo in sorted(sinfo["children"].items()):
                 _emit_code(subinfo, name, m, parent=sinfo)
