@@ -21,11 +21,13 @@ jsontogo:
 	python src/jsontogo/04*.py json/github.json | gofmt > dst/jsontogo/github4.go
 	python src/jsontogo/05*.py json/github.json | gofmt > dst/jsontogo/github5.go
 	python src/jsontogo/06*.py json/github.json | gofmt > dst/jsontogo/github6.go
+	python src/jsontogo/07*.py json/github.json | gofmt > dst/jsontogo/github7.go
 
 article:
 	mkdir -p dst/article
 	python src/jsontogo/04*.py json/article.json --name Article | gofmt > dst/article/article4.go
 	python src/jsontogo/05*.py json/article.json --name Article | gofmt > dst/article/article5.go
+	python src/jsontogo/07*.py json/article.json --name Article | gofmt > dst/article/article7.go
 
 misc:
 	rm -f misc/*.output*
