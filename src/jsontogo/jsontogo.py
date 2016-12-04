@@ -5,6 +5,7 @@ import re
 import json
 from collections import defaultdict
 from collections import deque
+from prestring import NameStore
 from prestring.go import GoModule
 from prestring.go import goname as to_goname
 
@@ -98,6 +99,10 @@ def is_omitempty_struct_info(subinfo, sinfo):
 
 def emit_code(sinfo, name, m, im):
     cw = CommentWriter(m, name, sinfo)
+    ns = NameStore()
+
+    def make_signature(sinfo):
+        return tuple([(k, v["type"], v.get("type2")) for k, v in sorted(sinfo["children"].items())])
 
     def _emit_struct(sinfo, name, parent=None):
         with m.type_(name, to_type_struct_info(sinfo)):
@@ -109,9 +114,11 @@ def emit_code(sinfo, name, m, im):
             im.import_(sinfo.get("type").rsplit(".", 1)[0])
 
         if sinfo.get("type") == "struct":
-            cw.write(name, sinfo, parent=parent)
-            cont.append((name, sinfo))
-            typ = name
+            signature = make_signature(sinfo)
+            ns[signature] = name
+            cw.write(ns[signature], sinfo, parent=parent)
+            cont.append((name, sinfo, signature))
+            typ = ns[signature]
         else:
             typ = to_type_struct_info(sinfo)
             if "/" in typ:
@@ -124,10 +131,11 @@ def emit_code(sinfo, name, m, im):
         else:
             m.insert_after('  `json:"{}"`'.format(sinfo["jsonname"]))
 
-    cont = deque([(name, sinfo)])
+    cont = deque([(name, sinfo, make_signature(sinfo))])
     while cont:
-        name, sinfo = cont.popleft()
-        _emit_struct(sinfo, name)
+        name, sinfo, signature = cont.popleft()
+        ns[signature] = name
+        _emit_struct(sinfo, ns[signature])
     return m
 
 
