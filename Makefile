@@ -47,8 +47,12 @@ setup:
 swagger_setup:
 	pip install -r requirements.txt
 	go get -v github.com/go-swagger/go-swagger/cmd/swagger
+	go get -v github.com/go-openapi/validate
+	go get -v github.com/go-openapi/swag
 	go get -v github.com/podhmo/go-structjson/cmd/go-structjson
 	go get -v github.com/podhmo/go-structjson/cmd/go-funcjson
+	go get -v golang.org/x/tools/cmd/goimports
+	go get -v github.com/davecgh/go-spew/spew
 	npm install
 
 swagger_serve:
@@ -57,27 +61,34 @@ swagger_serve:
 swagger_fetch:
 	mkdir -p yaml
 	wget https://api.apis.guru/v2/specs/github.com/v3/swagger.yaml -O yaml/github-swagger.yaml
-	gsed -i "s/type: *'null'/type: object/g" yaml/github-swagger.yaml
+	gsed -i "s/type: *'null'/type: object/g; s/'+1':/'plus1':/g; s/'-1':/'minus1':/" yaml/github-swagger.yaml
 
 swagger_src:
 	mkdir -p src/github
-	python src/jsontogo/jsontogo.py json/github-get-authenticated-user.json --name AuthenticatedUser | gofmt > src/github/authenticated_user.go
+	python src/jsontogo/jsontogo.py json/github-get-authenticated-user.json --package github --name AuthenticatedUser | gofmt > src/github/authenticated_user.go
 
 swagger_gen:
 	rm -rf dst/swagger/gen
 	mkdir -p dst/swagger/gen
 	swagger generate model -f yaml/github-swagger.yaml --target dst/swagger/gen --model-package def
+	goimports -w dst/swagger/gen/def/*.go
 
 swagger_extract:
 	mkdir -p dst/swagger/convert
 	mkdir -p json/extracted
 	go-structjson -target src/github > json/extracted/src.json
 	go-structjson -target dst/swagger/gen/def > json/extracted/dst.json
-	go-funcjson -target dst/swagger/convert > json/extracted/convert.json
+	go-funcjson -target dst/swagger/convert > json/extracted/convert.json || echo '{}' > json/extracted/convert.json
 
 swagger_convert:
 	mkdir -p dst/swagger/convert
 	python src/convert.py --logger=DEBUG --src json/extracted/src.json --dst json/extracted/dst.json --override json/extracted/convert.json > dst/swagger/convert/autogen.go
 	gofmt -w dst/swagger/convert/autogen.go
+
+swagger_run1:
+	cat json/github-get-authenticated-user.json | go run dst/swagger/main/spew/*.go
+
+swagger_run2:
+	cat json/github-get-authenticated-user.json | go run dst/swagger/main/json/*.go
 
 .PHONY: misc
