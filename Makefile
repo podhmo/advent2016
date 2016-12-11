@@ -45,14 +45,24 @@ setup:
 
 # swagger
 swagger_setup:
+	pip install -r requirements.txt
 	go get -v github.com/go-swagger/go-swagger/cmd/swagger
+	npm install
+
+swagger_serve:
+	./node_modules/.bin/redocup	yaml/github-swagger.yaml
 
 swagger_fetch:
 	mkdir -p yaml
 	wget https://api.apis.guru/v2/specs/github.com/v3/swagger.yaml -O yaml/github-swagger.yaml
 
+swagger_src:
+	mkdir -p src/github
+	python src/jsontogo/09*.py json/github-get-authenticated-user.json --name AuthenticatedUser | gofmt > src/github/authenticated_user.go
+
 swagger_gen:
+	rm -rf dst/swagger/gen
 	mkdir -p dst/swagger/gen
-	swagger generate model -f yaml/github-swagger.yaml --target dst/swagger/gen --model-package def
+	swagger generate server -f yaml/github-swagger.yaml --target dst/swagger/gen --model-package def
 
 .PHONY: misc

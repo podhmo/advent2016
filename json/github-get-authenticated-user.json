@@ -1,0 +1,32 @@
+{
+  "avatar_url": "string",
+  "bio": "string",
+  "blog": "string",
+  "collaborators": 0,
+  "company": "string",
+  "created_at": "string",
+  "disk_usage": 0,
+  "email": "string",
+  "followers": 0,
+  "following": 0,
+  "gravatar_id": "string",
+  "hireable": true,
+  "html_url": "string",
+  "id": 0,
+  "location": "string",
+  "login": "string",
+  "name": "string",
+  "owned_private_repos": 0,
+  "plan": {
+    "collaborators": 0,
+    "name": "string",
+    "private_repos": 0,
+    "space": 0
+  },
+  "private_gists": 0,
+  "public_gists": 0,
+  "public_repos": 0,
+  "total_private_repos": 0,
+  "type": "string",
+  "url": "string"
+}
