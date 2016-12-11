@@ -27,7 +27,9 @@ def json_to_go(json_string, name, m=None, rx=re.compile("\.0", re.M)):
 def resolve_type(val, time_rx=re.compile("\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d+)?(\+\d\d:\d\d|Z)")):
     if val is None:
         return "interface{}"
-    if isinstance(val, str):
+    if isinstance(val, bool):
+        return "bool"
+    elif isinstance(val, str):
         if time_rx.match(val):
             return "time.Time"
         elif "://" in val:
@@ -41,8 +43,6 @@ def resolve_type(val, time_rx=re.compile("\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d+)?
             return "int64"
     elif isinstance(val, float):
         return "float64"
-    elif isinstance(val, bool):
-        return "bool"
     elif hasattr(val, "keys"):
         return "struct"
     elif isinstance(val, (list, tuple)):
