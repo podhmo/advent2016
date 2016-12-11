@@ -25,13 +25,17 @@ def run(src_file, dst_file, override_file):
 
 
 def main():
+    from goconvert import logger as l
     parser = argparse.ArgumentParser()
     parser.add_argument("--src", required=True)
     parser.add_argument("--dst", required=True)
     parser.add_argument("--override", required=True)
+    parser.add_argument("--logger", required=False, choices=l.LEVELS, default=None)
     args = parser.parse_args()
+    if args.logger:
+        l.activate_logger(level=args.logger)
     return run(args.src, args.dst, args.override)
 
 if __name__ == "__main__":
-    # main()
-    run("../json/src.json", "../json/dst.json", "../json/convert.json")
+    main()
+    # run("../json/src.json", "../json/dst.json", "../json/convert.json")
