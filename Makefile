@@ -43,4 +43,16 @@ misc:
 setup:
 	pip install -r requirements.txt
 
+# swagger
+swagger_setup:
+	go get -v github.com/go-swagger/go-swagger/cmd/swagger
+
+swagger_fetch:
+	mkdir -p yaml
+	wget https://api.apis.guru/v2/specs/github.com/v3/swagger.yaml -O yaml/github-swagger.yaml
+
+swagger_gen:
+	mkdir -p dst/swagger/gen
+	swagger generate model -f yaml/github-swagger.yaml --target dst/swagger/gen --model-package def
+
 .PHONY: misc
