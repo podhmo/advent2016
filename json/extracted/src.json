@@ -1,0 +1,486 @@
+{
+  "module": {
+    "autogen": {
+      "name": "autogen",
+      "fullname": "github.com/podhmo/advent2016/src/github",
+      "file": {
+        "/Users/nao/vboxshare/sandbox/go/src/github.com/podhmo/advent2016/src/github/authenticated_user.go": {
+          "name": "/Users/nao/vboxshare/sandbox/go/src/github.com/podhmo/advent2016/src/github/authenticated_user.go",
+          "struct": {
+            "AuthenticatedUser": {
+              "name": "AuthenticatedUser",
+              "fields": {
+                "AvatarURL": {
+                  "name": "AvatarURL",
+                  "tags": {
+                    "example": [
+                      "string"
+                    ],
+                    "json": [
+                      "avatar_url"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "string"
+                  },
+                  "embed": false
+                },
+                "Bio": {
+                  "name": "Bio",
+                  "tags": {
+                    "example": [
+                      "string"
+                    ],
+                    "json": [
+                      "bio"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "string"
+                  },
+                  "embed": false
+                },
+                "Blog": {
+                  "name": "Blog",
+                  "tags": {
+                    "example": [
+                      "string"
+                    ],
+                    "json": [
+                      "blog"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "string"
+                  },
+                  "embed": false
+                },
+                "Collaborators": {
+                  "name": "Collaborators",
+                  "tags": {
+                    "example": [
+                      "0"
+                    ],
+                    "json": [
+                      "collaborators"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "int"
+                  },
+                  "embed": false
+                },
+                "Company": {
+                  "name": "Company",
+                  "tags": {
+                    "example": [
+                      "string"
+                    ],
+                    "json": [
+                      "company"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "string"
+                  },
+                  "embed": false
+                },
+                "CreatedAt": {
+                  "name": "CreatedAt",
+                  "tags": {
+                    "example": [
+                      "string"
+                    ],
+                    "json": [
+                      "created_at"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "string"
+                  },
+                  "embed": false
+                },
+                "DiskUsage": {
+                  "name": "DiskUsage",
+                  "tags": {
+                    "example": [
+                      "0"
+                    ],
+                    "json": [
+                      "disk_usage"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "int"
+                  },
+                  "embed": false
+                },
+                "Email": {
+                  "name": "Email",
+                  "tags": {
+                    "example": [
+                      "string"
+                    ],
+                    "json": [
+                      "email"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "string"
+                  },
+                  "embed": false
+                },
+                "Followers": {
+                  "name": "Followers",
+                  "tags": {
+                    "example": [
+                      "0"
+                    ],
+                    "json": [
+                      "followers"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "int"
+                  },
+                  "embed": false
+                },
+                "Following": {
+                  "name": "Following",
+                  "tags": {
+                    "example": [
+                      "0"
+                    ],
+                    "json": [
+                      "following"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "int"
+                  },
+                  "embed": false
+                },
+                "GravatarID": {
+                  "name": "GravatarID",
+                  "tags": {
+                    "example": [
+                      "string"
+                    ],
+                    "json": [
+                      "gravatar_id"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "string"
+                  },
+                  "embed": false
+                },
+                "HTMLURL": {
+                  "name": "HTMLURL",
+                  "tags": {
+                    "example": [
+                      "string"
+                    ],
+                    "json": [
+                      "html_url"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "string"
+                  },
+                  "embed": false
+                },
+                "Hireable": {
+                  "name": "Hireable",
+                  "tags": {
+                    "example": [
+                      "True"
+                    ],
+                    "json": [
+                      "hireable"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "bool"
+                  },
+                  "embed": false
+                },
+                "ID": {
+                  "name": "ID",
+                  "tags": {
+                    "example": [
+                      "0"
+                    ],
+                    "json": [
+                      "id"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "int"
+                  },
+                  "embed": false
+                },
+                "Location": {
+                  "name": "Location",
+                  "tags": {
+                    "example": [
+                      "string"
+                    ],
+                    "json": [
+                      "location"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "string"
+                  },
+                  "embed": false
+                },
+                "Login": {
+                  "name": "Login",
+                  "tags": {
+                    "example": [
+                      "string"
+                    ],
+                    "json": [
+                      "login"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "string"
+                  },
+                  "embed": false
+                },
+                "Name": {
+                  "name": "Name",
+                  "tags": {
+                    "example": [
+                      "string"
+                    ],
+                    "json": [
+                      "name"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "string"
+                  },
+                  "embed": false
+                },
+                "OwnedPrivateRepos": {
+                  "name": "OwnedPrivateRepos",
+                  "tags": {
+                    "example": [
+                      "0"
+                    ],
+                    "json": [
+                      "owned_private_repos"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "int"
+                  },
+                  "embed": false
+                },
+                "Plan": {
+                  "name": "Plan",
+                  "tags": {
+                    "json": [
+                      "plan"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "Plan"
+                  },
+                  "embed": false
+                },
+                "PrivateGists": {
+                  "name": "PrivateGists",
+                  "tags": {
+                    "example": [
+                      "0"
+                    ],
+                    "json": [
+                      "private_gists"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "int"
+                  },
+                  "embed": false
+                },
+                "PublicGists": {
+                  "name": "PublicGists",
+                  "tags": {
+                    "example": [
+                      "0"
+                    ],
+                    "json": [
+                      "public_gists"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "int"
+                  },
+                  "embed": false
+                },
+                "PublicRepos": {
+                  "name": "PublicRepos",
+                  "tags": {
+                    "example": [
+                      "0"
+                    ],
+                    "json": [
+                      "public_repos"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "int"
+                  },
+                  "embed": false
+                },
+                "TotalPrivateRepos": {
+                  "name": "TotalPrivateRepos",
+                  "tags": {
+                    "example": [
+                      "0"
+                    ],
+                    "json": [
+                      "total_private_repos"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "int"
+                  },
+                  "embed": false
+                },
+                "Type": {
+                  "name": "Type",
+                  "tags": {
+                    "example": [
+                      "string"
+                    ],
+                    "json": [
+                      "type"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "string"
+                  },
+                  "embed": false
+                },
+                "URL": {
+                  "name": "URL",
+                  "tags": {
+                    "example": [
+                      "string"
+                    ],
+                    "json": [
+                      "url"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "string"
+                  },
+                  "embed": false
+                }
+              }
+            },
+            "Plan": {
+              "name": "Plan",
+              "fields": {
+                "Collaborators": {
+                  "name": "Collaborators",
+                  "tags": {
+                    "example": [
+                      "0"
+                    ],
+                    "json": [
+                      "collaborators"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "int"
+                  },
+                  "embed": false
+                },
+                "Name": {
+                  "name": "Name",
+                  "tags": {
+                    "example": [
+                      "string"
+                    ],
+                    "json": [
+                      "name"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "string"
+                  },
+                  "embed": false
+                },
+                "PrivateRepos": {
+                  "name": "PrivateRepos",
+                  "tags": {
+                    "example": [
+                      "0"
+                    ],
+                    "json": [
+                      "private_repos"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "int"
+                  },
+                  "embed": false
+                },
+                "Space": {
+                  "name": "Space",
+                  "tags": {
+                    "example": [
+                      "0"
+                    ],
+                    "json": [
+                      "space"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "int"
+                  },
+                  "embed": false
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

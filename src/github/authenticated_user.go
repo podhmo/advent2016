@@ -1,4 +1,4 @@
-package autogen
+package github
 
 /* structure
 AuthenticatedUser
@@ -18,7 +18,7 @@ type AuthenticatedUser struct {
 	Following         int    `json:"following" example:"0"`
 	GravatarID        string `json:"gravatar_id" example:"string"`
 	HTMLURL           string `json:"html_url" example:"string"`
-	Hireable          int    `json:"hireable" example:"True"`
+	Hireable          bool   `json:"hireable" example:"True"`
 	ID                int    `json:"id" example:"0"`
 	Location          string `json:"location" example:"string"`
 	Login             string `json:"login" example:"string"`

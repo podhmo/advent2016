@@ -12876,9 +12876,9 @@ definitions:
         type: string
       '1234':
         type: string
-      '+1':
+      'plus1':
         type: string
-      '-1':
+      'minus1':
         type: string
       8ball:
         type: string
@@ -14450,7 +14450,7 @@ definitions:
               id:
                 type: integer
               language:
-                type: 'null'
+                type: object
               master_branch:
                 type: string
               mirror_url:
@@ -14556,7 +14556,7 @@ definitions:
               id:
                 type: integer
               language:
-                type: 'null'
+                type: object
               master_branch:
                 type: string
               mirror_url:
@@ -16194,11 +16194,11 @@ definitions:
         items:
           properties:
             assignee:
-              type: 'null'
+              type: object
             body:
               type: string
             closed_at:
-              type: 'null'
+              type: object
             comments:
               type: integer
             comments_url:
@@ -16225,17 +16225,17 @@ definitions:
             labels_url:
               type: string
             milestone:
-              type: 'null'
+              type: object
             number:
               type: integer
             pull_request:
               properties:
                 diff_url:
-                  type: 'null'
+                  type: object
                 html_url:
-                  type: 'null'
+                  type: object
                 patch_url:
-                  type: 'null'
+                  type: object
               type: object
             score:
               type: number
@@ -16728,7 +16728,7 @@ definitions:
         id:
           type: integer
         language:
-          type: 'null'
+          type: object
         master_branch:
           type: string
         mirror_url:
