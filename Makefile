@@ -47,6 +47,8 @@ setup:
 swagger_setup:
 	pip install -r requirements.txt
 	go get -v github.com/go-swagger/go-swagger/cmd/swagger
+	go get -v github.com/podhmo/go-structjson/cmd/go-structjson
+	go get -v github.com/podhmo/go-structjson/cmd/go-funcjson
 	npm install
 
 swagger_serve:
@@ -55,14 +57,27 @@ swagger_serve:
 swagger_fetch:
 	mkdir -p yaml
 	wget https://api.apis.guru/v2/specs/github.com/v3/swagger.yaml -O yaml/github-swagger.yaml
+	gsed -i "s/type: *'null'/type: object/g" yaml/github-swagger.yaml
 
 swagger_src:
 	mkdir -p src/github
-	python src/jsontogo/09*.py json/github-get-authenticated-user.json --name AuthenticatedUser | gofmt > src/github/authenticated_user.go
+	python src/jsontogo/jsontogo.py json/github-get-authenticated-user.json --name AuthenticatedUser | gofmt > src/github/authenticated_user.go
 
 swagger_gen:
 	rm -rf dst/swagger/gen
 	mkdir -p dst/swagger/gen
-	swagger generate server -f yaml/github-swagger.yaml --target dst/swagger/gen --model-package def
+	swagger generate model -f yaml/github-swagger.yaml --target dst/swagger/gen --model-package def
+
+swagger_extract:
+	mkdir -p dst/swagger/convert
+	mkdir -p json/extracted
+	go-structjson -target src/github > json/extracted/src.json
+	go-structjson -target dst/swagger/gen/def > json/extracted/dst.json
+	go-funcjson -target dst/swagger/convert > json/extracted/convert.json
+
+swagger_convert:
+	mkdir -p dst/swagger/convert
+	python src/convert.py --logger=DEBUG --src json/extracted/src.json --dst json/extracted/dst.json --override json/extracted/convert.json > dst/swagger/convert/autogen.go
+	gofmt -w dst/swagger/convert/autogen.go
 
 .PHONY: misc
