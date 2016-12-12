@@ -423,6 +423,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -918,6 +923,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -1026,6 +1036,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -1108,6 +1123,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             },
             "validate": {
@@ -1750,6 +1770,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -1851,6 +1876,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -1987,6 +2017,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -2252,6 +2287,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -2967,6 +3007,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -3048,6 +3093,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -3417,6 +3467,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -3947,6 +4002,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -5962,6 +6022,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -6188,6 +6253,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -6309,6 +6379,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -6533,6 +6608,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -7364,6 +7444,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -7463,6 +7548,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -7820,6 +7910,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -7919,6 +8014,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -8033,6 +8133,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -8427,6 +8532,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -8838,6 +8948,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -9181,6 +9296,11 @@
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
             },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
+            },
             "validate": {
               "name": "validate",
               "fullname": "github.com/go-openapi/validate",
@@ -9250,11 +9370,11 @@
                   },
                   "embed": false
                 },
-                "Nr1": {
-                  "name": "Nr1",
+                "Minus1": {
+                  "name": "Minus1",
                   "tags": {
                     "json": [
-                      "-1",
+                      "minus1",
                       "omitempty"
                     ]
                   },
@@ -9297,6 +9417,20 @@
                   "tags": {
                     "json": [
                       "8ball",
+                      "omitempty"
+                    ]
+                  },
+                  "type": {
+                    "kind": "primitive",
+                    "value": "string"
+                  },
+                  "embed": false
+                },
+                "Plus1": {
+                  "name": "Plus1",
+                  "tags": {
+                    "json": [
+                      "plus1",
                       "omitempty"
                     ]
                   },
@@ -10211,6 +10345,11 @@
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
             },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
+            },
             "validate": {
               "name": "validate",
               "fullname": "github.com/go-openapi/validate",
@@ -10554,6 +10693,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -10982,6 +11126,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -11460,6 +11609,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -11990,6 +12144,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -12697,6 +12856,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -13053,6 +13217,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -13180,6 +13349,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -13423,6 +13597,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -13611,6 +13790,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -13806,6 +13990,11 @@
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
             },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
+            },
             "validate": {
               "name": "validate",
               "fullname": "github.com/go-openapi/validate",
@@ -13861,6 +14050,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -13956,6 +14150,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -14049,6 +14248,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -14788,6 +14992,11 @@
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
             },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
+            },
             "validate": {
               "name": "validate",
               "fullname": "github.com/go-openapi/validate",
@@ -14989,6 +15198,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -15362,6 +15576,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -15584,6 +15803,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -15647,6 +15871,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             },
             "validate": {
@@ -15732,6 +15961,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             },
             "validate": {
@@ -15974,6 +16208,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -17053,6 +17292,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -17106,6 +17350,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -17351,6 +17600,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             },
             "validate": {
@@ -17959,6 +18213,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -18066,6 +18325,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -18175,6 +18439,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -18255,6 +18524,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -18327,6 +18601,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             },
             "validate": {
@@ -18681,6 +18960,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -18734,6 +19018,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -18928,6 +19217,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -19171,6 +19465,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -21275,6 +21574,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -23091,6 +23395,11 @@
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
             },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
+            },
             "validate": {
               "name": "validate",
               "fullname": "github.com/go-openapi/validate",
@@ -23450,6 +23759,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -23901,6 +24215,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -24199,6 +24518,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -24424,6 +24748,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -24653,6 +24982,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -24766,6 +25100,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -25011,6 +25350,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -25140,6 +25484,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -26106,6 +26455,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -27144,6 +27498,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -28727,6 +29086,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -28996,6 +29360,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -29291,6 +29660,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -29424,6 +29798,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             },
             "validate": {
@@ -29839,6 +30218,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -30454,6 +30838,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -30695,6 +31084,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -31710,6 +32104,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -32384,6 +32783,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -32613,6 +33017,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -33116,6 +33525,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -33484,6 +33898,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -33738,6 +34157,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -33979,6 +34403,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -34250,6 +34679,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -34357,6 +34791,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -34825,6 +35264,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -35630,6 +36074,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -35709,6 +36158,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -35910,6 +36364,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -36067,6 +36526,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -36230,6 +36694,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             },
             "validate": {
@@ -36671,6 +37140,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }
@@ -37814,6 +38288,11 @@
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
               "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
+              "needparse": false
             }
           }
         },
@@ -37921,6 +38400,11 @@
             "strfmt": {
               "name": "strfmt",
               "fullname": "github.com/go-openapi/strfmt",
+              "needparse": false
+            },
+            "swag": {
+              "name": "swag",
+              "fullname": "github.com/go-openapi/swag",
               "needparse": false
             }
           }

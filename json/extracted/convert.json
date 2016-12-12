@@ -1,1 +1,44 @@
-{}
+{
+  "module": {
+    "convert": {
+      "name": "convert",
+      "fullname": "github.com/podhmo/advent2016/dst/swagger/convert",
+      "file": {
+        "/Users/nao/vboxshare/sandbox/go/src/github.com/podhmo/advent2016/dst/swagger/convert/primitive.go": {
+          "name": "/Users/nao/vboxshare/sandbox/go/src/github.com/podhmo/advent2016/dst/swagger/convert/primitive.go",
+          "function": {
+            "TimeToString": {
+              "name": "TimeToString",
+              "params": [
+                {
+                  "name": "t",
+                  "type": {
+                    "kind": "selector",
+                    "prefix": "time",
+                    "value": "Time"
+                  }
+                }
+              ],
+              "returns": [
+                {
+                  "name": "",
+                  "type": {
+                    "kind": "primitive",
+                    "value": "string"
+                  }
+                }
+              ]
+            }
+          },
+          "import": {
+            "time": {
+              "name": "time",
+              "fullname": "time",
+              "needparse": false
+            }
+          }
+        }
+      }
+    }
+  }
+}
