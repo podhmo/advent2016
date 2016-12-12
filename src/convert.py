@@ -16,7 +16,7 @@ def run(src_file, dst_file, override_file):
 
     convert_module = reader.universe.create_module("convert", "github.com/podhmo/advent2016/dst/swagger/convert")
     b = builders.ConvertBuilder(reader.universe, convert_module)
-    b.register_from_module(convert_module)
+    b.register_from_module(convert_module, skip=lambda fn: "autogen" in fn.file.name)
 
     src = reader.universe.find_module("github.com/podhmo/advent2016/src/github")
     dst = reader.universe.find_module("github.com/podhmo/advent2016/dst/swagger/gen/def/")
