@@ -32,8 +32,8 @@ def resolve_type(val, time_rx=re.compile("\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d+)?
     elif isinstance(val, str):
         if time_rx.match(val):
             return "time.Time"
-        elif "://" in val:
-            return "github.com/go-openapi/strfmt.Uri"
+        # elif "://" in val:
+        #     return "github.com/go-openapi/strfmt.Uri"
         else:
             return "string"
     elif isinstance(val, int):
