@@ -14,7 +14,7 @@ def run(src_file, dst_file, override_file):
         with open(f) as rf:
             reader.read_world(json.load(rf, object_pairs_hook=OrderedDict))
 
-    convert_module = reader.universe.create_module("convert", "github.com/podhmo/advent2016/dst/convert")
+    convert_module = reader.universe.create_module("convert", "github.com/podhmo/advent2016/dst/swagger/convert")
     b = builders.ConvertBuilder(reader.universe, convert_module)
     b.register_from_module(convert_module)
 

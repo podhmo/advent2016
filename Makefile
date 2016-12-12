@@ -82,7 +82,7 @@ swagger_extract:
 
 swagger_convert:
 	mkdir -p dst/swagger/convert
-	python src/convert.py --logger=DEBUG --src json/extracted/src.json --dst json/extracted/dst.json --override json/extracted/convert.json > dst/swagger/convert/autogen.go
+	python src/convert.py --logger=DEBUG --src json/extracted/src.json --dst json/extracted/dst.json --override json/extracted/convert.json > dst/swagger/convert/autogen.go || rm dst/swagger/convert/autogen.go
 	gofmt -w dst/swagger/convert/autogen.go
 
 swagger_run1:
